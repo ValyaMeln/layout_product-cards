@@ -1,0 +1,112 @@
+.card {
+  width: 200px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+  background: $text-white;
+
+  &--product {
+    padding: 32px 16px 16px;
+  }
+
+  &__image {
+    display: block;
+
+    max-width: 160px;
+    height: 134px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    letter-spacing: 0;
+    text-align: left;
+    max-width: 166px;
+  }
+
+  &__code-stars-price {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  &__product-code {
+    color: #616070;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 16px;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 24px;
+  }
+
+  &__reviews {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__price-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #616070;
+  }
+
+  &__price-number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__buy {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 11px 12px;
+    background-color: #00acdc;
+    color: $text-white;
+    width: 100%;
+
+    border-radius: 5px;
+    border: 1px solid #00acdc;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+
+    // Обов'язково для кнопок
+    transition: background-color 0.3s ease;
+    &:hover {
+      color: #00acdc;
+      background-color: $text-white;
+    }
+  }
+}
