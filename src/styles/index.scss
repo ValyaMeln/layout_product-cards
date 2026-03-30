@@ -1,4 +1,4 @@
-@import 'variables';
+@import './blocks/variables';
 
 body {
   margin: 0;
@@ -16,5 +16,5 @@ html {
   font-style: normal;
 }
 
-@import 'card';
-@import 'stars';
+@import './blocks/card';
+@import './blocks/stars';
